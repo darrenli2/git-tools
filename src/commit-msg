@@ -9,4 +9,4 @@
 # To enable this hook, rename this file to "commit-msg".
 
 
-.git/hooks/add-prefix.rb $1
+.git/hooks/add_prefix.rb $1
