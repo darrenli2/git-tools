@@ -1,10 +1,10 @@
 pushd `dirname $0`
 ./switch_country.sh ca
-be rake payroll_local:install_migrations
-be rake db:drop
-be rake db:create
-be rake db:reset
-be rake db:migrate
-be rake db:seed
-be rake payroll_local:update_remittance_authorities
+bundle exec rake payroll_local:install_migrations
+bundle exec rake db:drop
+bundle exec rake db:create
+bundle exec rake db:reset
+bundle exec rake db:migrate
+bundle exec rake db:seed
+bundle exec rake payroll_local:update_remittance_authorities
 popd
